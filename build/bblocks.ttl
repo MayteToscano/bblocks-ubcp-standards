@@ -2,8 +2,8 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.w3.org/ns/oa#> .
-@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix ns2: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -16,40 +16,40 @@
         dcat:Catalog,
         bblocks:BBlocksRegister ;
     rdfs:label "Building Blocks - ubcp-bblocks-standards-v2" ;
-    dct:modified "2026-02-17T15:49:05.142115"^^xsd:dateTime ;
+    dct:modified "2026-02-17T15:53:21.860925"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:prefLabel "Building Blocks - ubcp-bblocks-standards-v2" ;
     prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
             dct:type "application/ld+json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://maytetoscano.github.io/bblocks-ubcp-standards/build/bblocks.jsonld> ],
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://maytetoscano.github.io/bblocks-ubcp-standards/build/bblocks.jsonld> ],
         [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
             dct:type "text/turtle" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://maytetoscano.github.io/bblocks-ubcp-standards/build/bblocks.ttl> ],
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://maytetoscano.github.io/bblocks-ubcp-standards/build/bblocks.ttl> ],
         [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://maytetoscano.github.io/bblocks-ubcp-standards/build/register.json> ] ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://maytetoscano.github.io/bblocks-ubcp-standards/build/register.json> ] ;
     foaf:homepage <https://maytetoscano.github.io/bblocks-ubcp-standards/> ;
     bblocks:hasValidationReport <https://maytetoscano.github.io/bblocks-ubcp-standards/build/tests/report.html> .
 
 <https://maytetoscano.github.io/bblocks-ubcp-standards/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Ne610ab1f07a24f6288457ae6e21b11dd ;
+    prov:wasAttributedTo _:N1e4b9876967147eb9b9ba9c9a47a1159 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-02-17T15:49:05.390181"^^xsd:dateTime ;
-            prov:startedAtTime "2026-02-17T15:49:05.245607"^^xsd:dateTime ;
+            prov:endedAtTime "2026-02-17T15:53:22.416932"^^xsd:dateTime ;
+            prov:startedAtTime "2026-02-17T15:53:22.054192"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-                [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:3a89e784e3c57a70a29251c47a02d4dc397636e7" ;
-                    rdfs:seeAlso <https://maytetoscano.github.io/bblocks-ubcp-standards/build/register.json> ] ;
-            prov:wasAssociatedWith _:Ne610ab1f07a24f6288457ae6e21b11dd ] .
+                    dct:hasVersion "git:df78cc5a6f281c23030150d1eaa76e16ad3e09bd" ;
+                    rdfs:seeAlso <https://maytetoscano.github.io/bblocks-ubcp-standards/build/register.json> ],
+                [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            prov:wasAssociatedWith _:N1e4b9876967147eb9b9ba9c9a47a1159 ] .
 
-_:Ne610ab1f07a24f6288457ae6e21b11dd a prov:Agent,
+_:N1e4b9876967147eb9b9ba9c9a47a1159 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.17" ;
