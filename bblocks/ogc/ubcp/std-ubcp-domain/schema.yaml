@@ -1,0 +1,26 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.ubcp_domain.json
+title: UBCP domain block (non-standard but required in table)
+type: object
+additionalProperties: false
+
+$defs:
+
+  platform_velocity:
+    type: object
+    description: Platform velocity vector (m/s) and/or scalar speed.
+    additionalProperties: false
+    properties:
+      vx_m_s: { type: number }
+      vy_m_s: { type: number }
+      vz_m_s: { type: number }
+  sampling_strategy:
+    type: string
+    description: Sampling design (grid/transect/plot), key for bias/detection.
+    enum: ["grid", "transect", "plot", "opportunistic", "other"]
+  emissivity:
+    type: number
+    description: Surface emissivity (0-1).
+    minimum: 0
+    maximum: 1
+

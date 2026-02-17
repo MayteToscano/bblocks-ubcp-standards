@@ -1,0 +1,26 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.iso19111.json
+title: ISO 19111 mapping (CRS + vertical reference + positioning mode)
+type: object
+additionalProperties: false
+
+$defs:
+
+  crs_identifier_uri:
+    type: string
+    description: CRS identifier expressed as a resolvable URI (e.g., EPSG URI).
+  vertical_reference_frame:
+    type: string
+    description: Vertical reference frame label used in the capture (e.g., mean sea level vs ellipsoidal).
+    enum: ["ellipsoidal", "mean_sea_level", "geoid_model", "local_datum", "rtk_corrected", "unknown"]
+  vertical_datum_uri:
+    type: string
+    description: Formal vertical datum/geoid model as URI (when known).
+  ellipsoidal_height:
+    type: number
+    description: Height above reference ellipsoid (meters).
+  positioning_mode:
+    type: string
+    description: Positioning mode used for georeferencing (GPS/RTK/PPK…).
+    enum: ["gps", "rtk", "ppk", "differential_gnss", "unknown"]
+

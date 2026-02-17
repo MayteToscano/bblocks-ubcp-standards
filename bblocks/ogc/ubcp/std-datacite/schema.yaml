@@ -1,0 +1,10 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.datacite.json
+title: DataCite mapping (persistent identifiers)
+type: object
+additionalProperties: false
+
+$defs:
+
+  persistent_identifier: { type: string, description: Persistent identifier for dataset/asset. }
+

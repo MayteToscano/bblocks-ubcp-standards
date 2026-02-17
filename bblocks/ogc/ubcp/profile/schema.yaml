@@ -1,0 +1,11 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.profile.json
+title: UBCP Profile
+type: object
+allOf:
+  - $ref: "../core/schema.yaml"
+  - anyOf:
+      - $ref: "../extension-rtk/schema.yaml"
+      - $ref: "../extension-multispectral/schema.yaml"
+      - $ref: "../extension-thermal/schema.yaml"
+      - $ref: "../extension-lidar/schema.yaml"

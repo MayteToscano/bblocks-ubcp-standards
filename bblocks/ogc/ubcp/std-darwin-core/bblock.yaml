@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.darwin_core
+title: Darwin Core mapping (biodiversity semantics)
+abstract: UBCP canonical attributes mapped to Darwin Core: observation objective and taxonomic resolution.
+version: 0.1.0
+externalReferences:
+  - id: DARWIN-CORE
+    title: Darwin Core
+    uri: https://dwc.tdwg.org/
+    type: informative

@@ -1,0 +1,6 @@
+id: ogc.ubcp.extension.lidar
+title: UBCP LiDAR Extension
+abstract: LiDAR extension (project-specific minimal placeholder).
+version: 0.1.0
+dependsOn:
+  - ogc.ubcp.core

@@ -1,0 +1,22 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.iso19157.json
+title: ISO 19157 mapping (quality + positioning precision)
+type: object
+additionalProperties: false
+
+$defs:
+
+  positioning_precision:
+    type: object
+    description: Positional uncertainty measures (e.g., RTK standard deviations).
+    additionalProperties: false
+    properties:
+      rtk_std_lat_m: { type: number }
+      rtk_std_lon_m: { type: number }
+      rtk_std_hgt_m: { type: number }
+      rtk_diff_age_s: { type: number }
+  quality_metrics:
+    type: object
+    description: Quality metrics for derived products (positional, radiometric, classification).
+    additionalProperties: true
+

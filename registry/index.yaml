@@ -1,0 +1,25 @@
+bblocks:
+  # Standard blocks (one per standard)
+  - ogc.ubcp.std.iso19111
+  - ogc.ubcp.std.iso19115
+  - ogc.ubcp.std.iso19115_2
+  - ogc.ubcp.std.iso19157
+  - ogc.ubcp.std.ogc_geopose
+  - ogc.ubcp.std.ogc_sensorml
+  - ogc.ubcp.std.w3c_sosa_ssn
+  - ogc.ubcp.std.w3c_prov
+  - ogc.ubcp.std.stac_core
+  - ogc.ubcp.std.stac_eo
+  - ogc.ubcp.std.stac_raster
+  - ogc.ubcp.std.ogc_api_records
+  - ogc.ubcp.std.darwin_core
+  - ogc.ubcp.std.datacite
+  - ogc.ubcp.std.ubcp_domain
+
+  # UBCP modules
+  - ogc.ubcp.core
+  - ogc.ubcp.extension.rtk
+  - ogc.ubcp.extension.multispectral
+  - ogc.ubcp.extension.thermal
+  - ogc.ubcp.extension.lidar
+  - ogc.ubcp.profile

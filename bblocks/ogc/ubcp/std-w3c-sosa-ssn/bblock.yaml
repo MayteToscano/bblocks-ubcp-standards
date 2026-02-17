@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.w3c_sosa_ssn
+title: W3C SOSA/SSN mapping (environment + sensor conditions)
+abstract: UBCP canonical attributes mapped to SOSA/SSN: ambient temperature, sensor temperature, relative humidity.
+version: 0.1.0
+externalReferences:
+  - id: W3C-SOSA-SSN
+    title: SOSA/SSN Ontology
+    uri: https://www.w3.org/TR/vocab-ssn/
+    type: informative

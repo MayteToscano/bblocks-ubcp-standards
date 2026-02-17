@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.ogc_api_records
+title: OGC API - Records mapping (publication/discovery)
+abstract: UBCP canonical attribute mapped to OGC API - Records: record endpoint for discovery/publication.
+version: 0.1.0
+externalReferences:
+  - id: OGC-API-RECORDS
+    title: OGC API - Records
+    uri: https://ogcapi.ogc.org/records/
+    type: informative

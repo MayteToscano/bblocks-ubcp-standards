@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.extension.lidar.json
+title: UBCP LiDAR Extension
+type: object
+additionalProperties: false
+
+$defs:
+  point_density_pts_m2:
+    type: number
+    description: Point density in points per square meter.
+  scan_pattern:
+    type: string
+    description: Scan pattern descriptor.
+
+required:
+  - point_density_pts_m2
+
+properties:
+

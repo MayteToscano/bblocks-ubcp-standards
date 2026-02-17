@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.ogc_sensorml
+title: OGC SensorML mapping (optics + calibration + radiometry)
+abstract: UBCP canonical attributes mapped to OGC SensorML: optics, distortion, radiometric calibration, camera settings, and irradiance reference.
+version: 0.1.0
+externalReferences:
+  - id: OGC-SENSORML
+    title: OGC SensorML
+    uri: https://www.ogc.org/standard/sensorml/
+    type: informative

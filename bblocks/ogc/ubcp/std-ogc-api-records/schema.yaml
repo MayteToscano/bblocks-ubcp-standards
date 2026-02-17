@@ -1,0 +1,10 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.ogc_api_records.json
+title: OGC API - Records mapping (publication/discovery)
+type: object
+additionalProperties: false
+
+$defs:
+
+  record_endpoint: { type: string, description: API endpoint where the dataset is published/discovered. }
+

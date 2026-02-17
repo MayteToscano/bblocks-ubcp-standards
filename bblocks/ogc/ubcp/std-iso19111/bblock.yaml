@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.iso19111
+title: ISO 19111 mapping (CRS + vertical reference + positioning mode)
+abstract: UBCP canonical attributes mapped to ISO 19111 (per your table): CRS URI, vertical reference, ellipsoidal height, vertical datum URI, positioning mode.
+version: 0.1.0
+externalReferences:
+  - id: ISO-19111
+    title: ISO 19111 Spatial referencing by coordinates
+    uri: https://www.iso.org/standard/74039.html
+    type: normative

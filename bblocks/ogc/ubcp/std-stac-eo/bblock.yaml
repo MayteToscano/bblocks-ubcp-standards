@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.stac_eo
+title: STAC EO mapping (spectral bands)
+abstract: UBCP canonical attribute mapped to STAC EO: spectral band definition.
+version: 0.1.0
+externalReferences:
+  - id: STAC-EO
+    title: STAC EO Extension
+    uri: https://github.com/stac-extensions/eo
+    type: informative

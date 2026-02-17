@@ -1,0 +1,16 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.iso19115_2.json
+title: ISO 19115-2 mapping (platform/instrument identifiers)
+type: object
+additionalProperties: false
+
+$defs:
+
+  platform_model: { type: string, description: UAV platform model. }
+  platform_serial_number: { type: string, description: UAV platform serial number. }
+  platform_manufacturer: { type: string, description: Platform manufacturer. }
+  sensor_model: { type: string, description: Sensor/camera model. }
+  instrument_instance_id: { type: string, description: Unique identifier of the physical sensor (serial). }
+  firmware_version: { type: string, description: Firmware/software version of platform or sensor. }
+  shutter_count: { type: integer, description: Shutter count / usage indicator (instrument wear traceability). }
+

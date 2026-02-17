@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.iso19115
+title: ISO 19115 mapping (lineage + constraints + timestamps)
+abstract: UBCP canonical attributes mapped to ISO 19115: processing lineage, access/legal constraints, file timestamps.
+version: 0.1.0
+externalReferences:
+  - id: ISO-19115
+    title: ISO 19115 Geographic information — Metadata
+    uri: https://www.iso.org/standard/53798.html
+    type: normative

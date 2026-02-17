@@ -1,0 +1,20 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.stac_core.json
+title: STAC Core mapping (assets + acquisition time)
+type: object
+additionalProperties: false
+
+$defs:
+
+  acquisition_time: { type: string, format: date-time, description: Acquisition datetime (UTC preferred). }
+  source_asset_ref:
+    type: object
+    description: STAC-like asset reference (href/media_type/roles).
+    additionalProperties: false
+    properties:
+      href: { type: string }
+      media_type: { type: string }
+      roles:
+        type: array
+        items: { type: string }
+

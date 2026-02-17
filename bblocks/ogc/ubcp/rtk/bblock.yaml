@@ -1,0 +1,7 @@
+id: ogc.ubcp.extension.rtk
+title: UBCP RTK Extension
+abstract: RTK/PPK precision extension (positioning precision metrics).
+version: 0.1.0
+dependsOn:
+  - ogc.ubcp.core
+  - ogc.ubcp.std.iso19157

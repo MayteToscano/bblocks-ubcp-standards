@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.iso19157
+title: ISO 19157 mapping (quality + positioning precision)
+abstract: UBCP canonical attributes mapped to ISO 19157: positioning precision metrics and quality metrics.
+version: 0.1.0
+externalReferences:
+  - id: ISO-19157
+    title: ISO 19157 Geographic information — Data quality
+    uri: https://www.iso.org/standard/32575.html
+    type: normative

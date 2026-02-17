@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.datacite
+title: DataCite mapping (persistent identifiers)
+abstract: UBCP canonical attribute mapped to DataCite: persistent identifier (DOI/UUID/Handle).
+version: 0.1.0
+externalReferences:
+  - id: DATACITE
+    title: DataCite Metadata Schema
+    uri: https://schema.datacite.org/
+    type: informative

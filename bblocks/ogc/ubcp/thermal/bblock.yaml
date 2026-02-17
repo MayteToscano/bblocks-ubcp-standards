@@ -1,0 +1,8 @@
+id: ogc.ubcp.extension.thermal
+title: UBCP Thermal Extension
+abstract: Thermal extension (emissivity + radiometric calibration).
+version: 0.1.0
+dependsOn:
+  - ogc.ubcp.core
+  - ogc.ubcp.std.ubcp_domain
+  - ogc.ubcp.std.ogc_sensorml

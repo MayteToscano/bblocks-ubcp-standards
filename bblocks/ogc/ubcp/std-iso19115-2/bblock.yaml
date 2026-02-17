@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.iso19115_2
+title: ISO 19115-2 mapping (platform/instrument identifiers)
+abstract: UBCP canonical attributes mapped to ISO 19115-2: platform + sensor identification and firmware, shutter count.
+version: 0.1.0
+externalReferences:
+  - id: ISO-19115-2
+    title: ISO 19115-2 Metadata for imagery and gridded data
+    uri: https://www.iso.org/standard/39229.html
+    type: informative

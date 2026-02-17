@@ -1,0 +1,16 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.ogc_geopose.json
+title: OGC GeoPose mapping (platform + mount orientation)
+type: object
+additionalProperties: false
+
+$defs:
+
+  platform_pitch_deg: { type: number, description: Platform pitch (degrees). }
+  platform_roll_deg: { type: number, description: Platform roll (degrees). }
+  platform_yaw_deg: { type: number, description: Platform yaw (degrees). }
+  relative_altitude: { type: number, description: Relative altitude above take-off or local reference (meters). }
+  sensor_mount_pitch_deg: { type: number, description: Sensor mount (gimbal) pitch (degrees). }
+  sensor_mount_roll_deg: { type: number, description: Sensor mount (gimbal) roll (degrees). }
+  sensor_mount_yaw_deg: { type: number, description: Sensor mount (gimbal) yaw (degrees). }
+

@@ -1,0 +1,32 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.ogc_sensorml.json
+title: OGC SensorML mapping (optics + calibration + radiometry)
+type: object
+additionalProperties: false
+
+$defs:
+
+  focal_length_mm: { type: number, description: Focal length (mm). }
+  calibrated_focal_length_mm: { type: number, description: Calibrated focal length (mm). }
+  principal_point_px:
+    type: object
+    description: Principal point in pixels (x,y).
+    additionalProperties: false
+    properties:
+      x: { type: number }
+      y: { type: number }
+  field_of_view_deg: { type: number, description: Field of view (degrees). }
+  distortion_model: { type: object, description: Lens distortion/dewarp/vignetting parameters., additionalProperties: true }
+  radiometric_calibration_model: { type: object, description: Radiometric calibration parameters., additionalProperties: true }
+  radiometric_setting:
+    type: object
+    description: Radiometric settings when normalizable (optional).
+    additionalProperties: true
+  aperture_f_number: { type: number, description: Aperture f-number. }
+  exposure_time_s: { type: number, description: Exposure time (seconds). }
+  iso_value: { type: number, description: ISO value (canonical). }
+  irradiance_reference:
+    type: object
+    description: Irradiance / sun-sensor parameters used for reflectance conversion.
+    additionalProperties: true
+

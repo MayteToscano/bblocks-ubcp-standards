@@ -1,0 +1,259 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.core.json
+title: UBCP Core
+type: object
+additionalProperties: false
+
+$defs:
+  acquisition_time:
+    $ref: "../std-stac-core/schema.yaml#/$defs/acquisition_time"
+
+  source_asset_ref:
+    $ref: "../std-stac-core/schema.yaml#/$defs/source_asset_ref"
+
+  crs_identifier_uri:
+    $ref: "../std-iso19111/schema.yaml#/$defs/crs_identifier_uri"
+
+  vertical_reference_frame:
+    $ref: "../std-iso19111/schema.yaml#/$defs/vertical_reference_frame"
+
+  vertical_datum_uri:
+    $ref: "../std-iso19111/schema.yaml#/$defs/vertical_datum_uri"
+
+  ellipsoidal_height:
+    $ref: "../std-iso19111/schema.yaml#/$defs/ellipsoidal_height"
+
+  positioning_mode:
+    $ref: "../std-iso19111/schema.yaml#/$defs/positioning_mode"
+
+  file_timestamps:
+    $ref: "../std-iso19115/schema.yaml#/$defs/file_timestamps"
+
+  processing_lineage:
+    $ref: "../std-iso19115/schema.yaml#/$defs/processing_lineage"
+
+  access_constraints:
+    $ref: "../std-iso19115/schema.yaml#/$defs/access_constraints"
+
+  legal_ethical_constraints:
+    $ref: "../std-iso19115/schema.yaml#/$defs/legal_ethical_constraints"
+
+  platform_model:
+    $ref: "../std-iso19115-2/schema.yaml#/$defs/platform_model"
+
+  platform_serial_number:
+    $ref: "../std-iso19115-2/schema.yaml#/$defs/platform_serial_number"
+
+  platform_manufacturer:
+    $ref: "../std-iso19115-2/schema.yaml#/$defs/platform_manufacturer"
+
+  sensor_model:
+    $ref: "../std-iso19115-2/schema.yaml#/$defs/sensor_model"
+
+  instrument_instance_id:
+    $ref: "../std-iso19115-2/schema.yaml#/$defs/instrument_instance_id"
+
+  firmware_version:
+    $ref: "../std-iso19115-2/schema.yaml#/$defs/firmware_version"
+
+  shutter_count:
+    $ref: "../std-iso19115-2/schema.yaml#/$defs/shutter_count"
+
+  platform_pitch_deg:
+    $ref: "../std-ogc-geopose/schema.yaml#/$defs/platform_pitch_deg"
+
+  platform_roll_deg:
+    $ref: "../std-ogc-geopose/schema.yaml#/$defs/platform_roll_deg"
+
+  platform_yaw_deg:
+    $ref: "../std-ogc-geopose/schema.yaml#/$defs/platform_yaw_deg"
+
+  relative_altitude:
+    $ref: "../std-ogc-geopose/schema.yaml#/$defs/relative_altitude"
+
+  sensor_mount_pitch_deg:
+    $ref: "../std-ogc-geopose/schema.yaml#/$defs/sensor_mount_pitch_deg"
+
+  sensor_mount_roll_deg:
+    $ref: "../std-ogc-geopose/schema.yaml#/$defs/sensor_mount_roll_deg"
+
+  sensor_mount_yaw_deg:
+    $ref: "../std-ogc-geopose/schema.yaml#/$defs/sensor_mount_yaw_deg"
+
+  focal_length_mm:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/focal_length_mm"
+
+  calibrated_focal_length_mm:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/calibrated_focal_length_mm"
+
+  principal_point_px:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/principal_point_px"
+
+  field_of_view_deg:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/field_of_view_deg"
+
+  distortion_model:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/distortion_model"
+
+  radiometric_calibration_model:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/radiometric_calibration_model"
+
+  radiometric_setting:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/radiometric_setting"
+
+  aperture_f_number:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/aperture_f_number"
+
+  exposure_time_s:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/exposure_time_s"
+
+  iso_value:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/iso_value"
+
+  irradiance_reference:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/irradiance_reference"
+
+  ambient_temperature:
+    $ref: "../std-w3c-sosa-ssn/schema.yaml#/$defs/ambient_temperature"
+
+  sensor_temperature:
+    $ref: "../std-w3c-sosa-ssn/schema.yaml#/$defs/sensor_temperature"
+
+  relative_humidity:
+    $ref: "../std-w3c-sosa-ssn/schema.yaml#/$defs/relative_humidity"
+
+  capture_activity_id:
+    $ref: "../std-w3c-prov/schema.yaml#/$defs/capture_activity_id"
+
+  flight_plan_id:
+    $ref: "../std-w3c-prov/schema.yaml#/$defs/flight_plan_id"
+
+  persistent_identifier:
+    $ref: "../std-datacite/schema.yaml#/$defs/persistent_identifier"
+
+  record_endpoint:
+    $ref: "../std-ogc-api-records/schema.yaml#/$defs/record_endpoint"
+
+  observation_objective:
+    $ref: "../std-darwin-core/schema.yaml#/$defs/observation_objective"
+
+  taxonomic_resolution:
+    $ref: "../std-darwin-core/schema.yaml#/$defs/taxonomic_resolution"
+
+  quality_metrics:
+    $ref: "../std-iso19157/schema.yaml#/$defs/quality_metrics"
+
+  platform_velocity:
+    $ref: "../std-ubcp-domain/schema.yaml#/$defs/platform_velocity"
+
+  sampling_strategy:
+    $ref: "../std-ubcp-domain/schema.yaml#/$defs/sampling_strategy"
+
+required:
+  - acquisition_time
+  - crs_identifier_uri
+  - platform_model
+  - instrument_instance_id
+  - platform_yaw_deg
+  - platform_pitch_deg
+  - platform_roll_deg
+  - source_asset_ref
+
+properties:
+  acquisition_time:
+    $ref: "#/$defs/acquisition_time"
+  source_asset_ref:
+    $ref: "#/$defs/source_asset_ref"
+  crs_identifier_uri:
+    $ref: "#/$defs/crs_identifier_uri"
+  vertical_reference_frame:
+    $ref: "#/$defs/vertical_reference_frame"
+  vertical_datum_uri:
+    $ref: "#/$defs/vertical_datum_uri"
+  ellipsoidal_height:
+    $ref: "#/$defs/ellipsoidal_height"
+  positioning_mode:
+    $ref: "#/$defs/positioning_mode"
+  file_timestamps:
+    $ref: "#/$defs/file_timestamps"
+  processing_lineage:
+    $ref: "#/$defs/processing_lineage"
+  access_constraints:
+    $ref: "#/$defs/access_constraints"
+  legal_ethical_constraints:
+    $ref: "#/$defs/legal_ethical_constraints"
+  platform_model:
+    $ref: "#/$defs/platform_model"
+  platform_serial_number:
+    $ref: "#/$defs/platform_serial_number"
+  platform_manufacturer:
+    $ref: "#/$defs/platform_manufacturer"
+  sensor_model:
+    $ref: "#/$defs/sensor_model"
+  instrument_instance_id:
+    $ref: "#/$defs/instrument_instance_id"
+  firmware_version:
+    $ref: "#/$defs/firmware_version"
+  shutter_count:
+    $ref: "#/$defs/shutter_count"
+  platform_pitch_deg:
+    $ref: "#/$defs/platform_pitch_deg"
+  platform_roll_deg:
+    $ref: "#/$defs/platform_roll_deg"
+  platform_yaw_deg:
+    $ref: "#/$defs/platform_yaw_deg"
+  relative_altitude:
+    $ref: "#/$defs/relative_altitude"
+  sensor_mount_pitch_deg:
+    $ref: "#/$defs/sensor_mount_pitch_deg"
+  sensor_mount_roll_deg:
+    $ref: "#/$defs/sensor_mount_roll_deg"
+  sensor_mount_yaw_deg:
+    $ref: "#/$defs/sensor_mount_yaw_deg"
+  focal_length_mm:
+    $ref: "#/$defs/focal_length_mm"
+  calibrated_focal_length_mm:
+    $ref: "#/$defs/calibrated_focal_length_mm"
+  principal_point_px:
+    $ref: "#/$defs/principal_point_px"
+  field_of_view_deg:
+    $ref: "#/$defs/field_of_view_deg"
+  distortion_model:
+    $ref: "#/$defs/distortion_model"
+  radiometric_calibration_model:
+    $ref: "#/$defs/radiometric_calibration_model"
+  radiometric_setting:
+    $ref: "#/$defs/radiometric_setting"
+  aperture_f_number:
+    $ref: "#/$defs/aperture_f_number"
+  exposure_time_s:
+    $ref: "#/$defs/exposure_time_s"
+  iso_value:
+    $ref: "#/$defs/iso_value"
+  irradiance_reference:
+    $ref: "#/$defs/irradiance_reference"
+  ambient_temperature:
+    $ref: "#/$defs/ambient_temperature"
+  sensor_temperature:
+    $ref: "#/$defs/sensor_temperature"
+  relative_humidity:
+    $ref: "#/$defs/relative_humidity"
+  capture_activity_id:
+    $ref: "#/$defs/capture_activity_id"
+  flight_plan_id:
+    $ref: "#/$defs/flight_plan_id"
+  persistent_identifier:
+    $ref: "#/$defs/persistent_identifier"
+  record_endpoint:
+    $ref: "#/$defs/record_endpoint"
+  observation_objective:
+    $ref: "#/$defs/observation_objective"
+  taxonomic_resolution:
+    $ref: "#/$defs/taxonomic_resolution"
+  quality_metrics:
+    $ref: "#/$defs/quality_metrics"
+  platform_velocity:
+    $ref: "#/$defs/platform_velocity"
+  sampling_strategy:
+    $ref: "#/$defs/sampling_strategy"
+

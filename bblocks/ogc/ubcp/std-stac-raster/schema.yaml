@@ -1,0 +1,13 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.stac_raster.json
+title: STAC Raster mapping (preprocessing status)
+type: object
+additionalProperties: false
+
+$defs:
+
+  preprocessing_status:
+    type: object
+    description: Applied preprocessing flags (dewarp/vignetting etc.).
+    additionalProperties: true
+

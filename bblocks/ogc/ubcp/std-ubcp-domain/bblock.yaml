@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.ubcp_domain
+title: UBCP domain block (non-standard but required in table)
+abstract: Canonical attributes that your table flags as '(to define)' or '(domain)' but needed for UBCP.
+version: 0.1.0
+externalReferences:
+  - id: UBCP-DOMAIN
+    title: UBCP domain vocabulary (project-specific)
+    uri: https://example.invalid/ubcp-domain
+    type: informative

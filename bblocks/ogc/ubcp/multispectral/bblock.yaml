@@ -1,0 +1,9 @@
+id: ogc.ubcp.extension.multispectral
+title: UBCP Multispectral Extension
+abstract: Multispectral extension (bands + irradiance reference + preprocessing flags).
+version: 0.1.0
+dependsOn:
+  - ogc.ubcp.core
+  - ogc.ubcp.std.stac_eo
+  - ogc.ubcp.std.ogc_sensorml
+  - ogc.ubcp.std.stac_raster

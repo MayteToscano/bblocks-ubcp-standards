@@ -1,0 +1,12 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.w3c_sosa_ssn.json
+title: W3C SOSA/SSN mapping (environment + sensor conditions)
+type: object
+additionalProperties: false
+
+$defs:
+
+  ambient_temperature: { type: number, description: Ambient temperature (°C). }
+  sensor_temperature: { type: number, description: Sensor temperature (°C). }
+  relative_humidity: { type: number, description: Relative humidity (%). }
+

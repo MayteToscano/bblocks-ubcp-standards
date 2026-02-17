@@ -1,0 +1,10 @@
+id: ogc.ubcp.profile
+title: UBCP Profile (Core + Optional Extensions)
+abstract: Composition of UBCP Core with optional RTK/Multispectral/Thermal/LiDAR extensions.
+version: 0.1.0
+dependsOn:
+  - ogc.ubcp.core
+  - ogc.ubcp.extension.rtk
+  - ogc.ubcp.extension.multispectral
+  - ogc.ubcp.extension.thermal
+  - ogc.ubcp.extension.lidar

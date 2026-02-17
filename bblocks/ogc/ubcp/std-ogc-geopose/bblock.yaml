@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.ogc_geopose
+title: OGC GeoPose mapping (platform + mount orientation)
+abstract: UBCP canonical attributes mapped to OGC GeoPose: platform attitude + relative altitude + sensor mount (gimbal) orientation.
+version: 0.1.0
+externalReferences:
+  - id: OGC-GEOPOSE
+    title: OGC GeoPose
+    uri: https://www.ogc.org/standard/geopose/
+    type: normative

@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.stac_eo.json
+title: STAC EO mapping (spectral bands)
+type: object
+additionalProperties: false
+
+$defs:
+
+  spectral_band_definition:
+    type: array
+    description: Spectral band definitions (name, center wavelength, FWHM).
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        name: { type: string }
+        center_wavelength_nm: { type: number }
+        fwhm_nm: { type: number }
+

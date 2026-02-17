@@ -1,0 +1,27 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.extension.multispectral.json
+title: UBCP Multispectral Extension
+type: object
+additionalProperties: false
+
+$defs:
+  spectral_band_definition:
+    $ref: "../std-stac-eo/schema.yaml#/$defs/spectral_band_definition"
+
+  irradiance_reference:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/irradiance_reference"
+
+  preprocessing_status:
+    $ref: "../std-stac-raster/schema.yaml#/$defs/preprocessing_status"
+
+required:
+  - spectral_band_definition
+
+properties:
+  spectral_band_definition:
+    $ref: "#/$defs/spectral_band_definition"
+  irradiance_reference:
+    $ref: "#/$defs/irradiance_reference"
+  preprocessing_status:
+    $ref: "#/$defs/preprocessing_status"
+

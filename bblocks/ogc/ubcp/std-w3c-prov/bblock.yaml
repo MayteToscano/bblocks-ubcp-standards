@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.w3c_prov
+title: W3C PROV-O mapping (provenance identifiers)
+abstract: UBCP canonical attributes mapped to PROV-O: capture activity and flight plan identifiers.
+version: 0.1.0
+externalReferences:
+  - id: W3C-PROV
+    title: PROV-O
+    uri: https://www.w3.org/TR/prov-o/
+    type: normative

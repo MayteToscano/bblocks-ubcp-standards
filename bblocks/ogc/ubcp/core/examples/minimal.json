@@ -1,0 +1,10 @@
+{
+  "acquisition_time": "2025-01-01T00:00:00Z",
+  "crs_identifier_uri": "https://www.opengis.net/def/crs/EPSG/0/4326",
+  "platform_model": "Matrice 350 RTK",
+  "instrument_instance_id": "SENSOR_SERIAL",
+  "platform_yaw_deg": 0.0,
+  "platform_pitch_deg": 0.0,
+  "platform_roll_deg": 0.0,
+  "source_asset_ref": "REPLACE_ME"
+}

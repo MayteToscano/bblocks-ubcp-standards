@@ -1,0 +1,11 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.darwin_core.json
+title: Darwin Core mapping (biodiversity semantics)
+type: object
+additionalProperties: false
+
+$defs:
+
+  observation_objective: { type: string, description: Observation objective / EBV target (conceptual mapping). }
+  taxonomic_resolution: { type: string, description: Taxonomic resolution (species/genus/habitat class…). }
+

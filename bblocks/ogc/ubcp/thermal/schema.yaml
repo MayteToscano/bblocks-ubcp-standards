@@ -1,0 +1,22 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.extension.thermal.json
+title: UBCP Thermal Extension
+type: object
+additionalProperties: false
+
+$defs:
+  emissivity:
+    $ref: "../std-ubcp-domain/schema.yaml#/$defs/emissivity"
+
+  radiometric_calibration_model:
+    $ref: "../std-ogc-sensorml/schema.yaml#/$defs/radiometric_calibration_model"
+
+required:
+  - emissivity
+
+properties:
+  emissivity:
+    $ref: "#/$defs/emissivity"
+  radiometric_calibration_model:
+    $ref: "#/$defs/radiometric_calibration_model"
+

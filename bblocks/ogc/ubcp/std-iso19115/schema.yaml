@@ -1,0 +1,25 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.iso19115.json
+title: ISO 19115 mapping (lineage + constraints + timestamps)
+type: object
+additionalProperties: false
+
+$defs:
+
+  processing_lineage:
+    type: string
+    description: Processing pipeline / lineage (LI_Lineage) describing steps (ortho/mosaic/AI/validation).
+  access_constraints:
+    type: string
+    description: Access/use constraints (license, attribution, restrictions).
+  legal_ethical_constraints:
+    type: string
+    description: Legal/ethical constraints (permits, privacy, sensitive areas).
+  file_timestamps:
+    type: object
+    description: File creation/modification timestamps.
+    additionalProperties: false
+    properties:
+      created: { type: string, format: date-time }
+      modified: { type: string, format: date-time }
+

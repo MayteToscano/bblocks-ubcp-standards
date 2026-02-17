@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.stac_raster
+title: STAC Raster mapping (preprocessing status)
+abstract: UBCP canonical attribute mapped to STAC Raster: preprocessing status flags.
+version: 0.1.0
+externalReferences:
+  - id: STAC-RASTER
+    title: STAC Raster Extension
+    uri: https://github.com/stac-extensions/raster
+    type: informative

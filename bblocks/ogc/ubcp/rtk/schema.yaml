@@ -1,0 +1,17 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.extension.rtk.json
+title: UBCP RTK Extension
+type: object
+additionalProperties: false
+
+$defs:
+  positioning_precision:
+    $ref: "../std-iso19157/schema.yaml#/$defs/positioning_precision"
+
+required:
+  - positioning_precision
+
+properties:
+  positioning_precision:
+    $ref: "#/$defs/positioning_precision"
+

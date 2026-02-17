@@ -1,0 +1,18 @@
+id: ogc.ubcp.core
+title: UBCP Core
+abstract: Core module reflecting the canonical attributes in your mapping table; properties are sourced via $ref from standard blocks.
+version: 0.1.0
+dependsOn:
+  - ogc.ubcp.std.stac_core
+  - ogc.ubcp.std.iso19111
+  - ogc.ubcp.std.iso19115
+  - ogc.ubcp.std.iso19115_2
+  - ogc.ubcp.std.ogc_geopose
+  - ogc.ubcp.std.ogc_sensorml
+  - ogc.ubcp.std.w3c_sosa_ssn
+  - ogc.ubcp.std.w3c_prov
+  - ogc.ubcp.std.iso19157
+  - ogc.ubcp.std.darwin_core
+  - ogc.ubcp.std.datacite
+  - ogc.ubcp.std.ogc_api_records
+  - ogc.ubcp.std.ubcp_domain

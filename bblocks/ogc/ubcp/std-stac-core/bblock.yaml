@@ -1,0 +1,9 @@
+id: ogc.ubcp.std.stac_core
+title: STAC Core mapping (assets + acquisition time)
+abstract: UBCP canonical attributes mapped to STAC: acquisition time and asset reference.
+version: 0.1.0
+externalReferences:
+  - id: STAC-CORE
+    title: STAC Core
+    uri: https://github.com/radiantearth/stac-spec
+    type: informative

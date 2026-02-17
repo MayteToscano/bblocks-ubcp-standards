@@ -1,0 +1,11 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/schemas/ogc.ubcp.std.w3c_prov.json
+title: W3C PROV-O mapping (provenance identifiers)
+type: object
+additionalProperties: false
+
+$defs:
+
+  capture_activity_id: { type: string, description: Identifier for the capture activity (prov:Activity). }
+  flight_plan_id: { type: string, description: Identifier/version of the flight plan for reproducibility (prov:Entity). }
+
