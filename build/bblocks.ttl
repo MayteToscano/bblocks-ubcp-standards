@@ -16,7 +16,7 @@
         dcat:Catalog,
         bblocks:BBlocksRegister ;
     rdfs:label "Building Blocks - ubcp-bblocks-standards-v2" ;
-    dct:modified "2026-02-17T15:56:14.742239"^^xsd:dateTime ;
+    dct:modified "2026-02-17T15:58:59.065866"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:prefLabel "Building Blocks - ubcp-bblocks-standards-v2" ;
     prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
@@ -36,20 +36,20 @@
 
 <https://maytetoscano.github.io/bblocks-ubcp-standards/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N7eff7fe8aec44ea28ebf456fb573a14a ;
+    prov:wasAttributedTo _:N7fe77898dbbe4f428d88ebc15cdf1aff ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-02-17T15:56:15.124851"^^xsd:dateTime ;
-            prov:startedAtTime "2026-02-17T15:56:14.891522"^^xsd:dateTime ;
+            prov:endedAtTime "2026-02-17T15:58:59.382848"^^xsd:dateTime ;
+            prov:startedAtTime "2026-02-17T15:58:59.187206"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-                [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:09699a3029ee8f96adf200277343352c9e4bc1fd" ;
-                    rdfs:seeAlso <https://maytetoscano.github.io/bblocks-ubcp-standards/build/register.json> ] ;
-            prov:wasAssociatedWith _:N7eff7fe8aec44ea28ebf456fb573a14a ] .
+                    dct:hasVersion "git:4b2ec1469d87215b15a85c4af724bdd9cd882f9d" ;
+                    rdfs:seeAlso <https://maytetoscano.github.io/bblocks-ubcp-standards/build/register.json> ],
+                [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            prov:wasAssociatedWith _:N7fe77898dbbe4f428d88ebc15cdf1aff ] .
 
-_:N7eff7fe8aec44ea28ebf456fb573a14a a prov:Agent,
+_:N7fe77898dbbe4f428d88ebc15cdf1aff a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.17" ;
