@@ -165,7 +165,7 @@
     }
   ],
   "name": "Building Blocks - ubcp-bblocks-standards-v2",
-  "modified": "2026-02-17T15:53:21.860925",
+  "modified": "2026-02-17T15:56:14.742239",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"2387fb012a9744d98c528651f0f987e912758a50",
