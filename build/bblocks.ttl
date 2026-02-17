@@ -1,0 +1,57 @@
+@prefix bblocks: <https://www.opengis.net/def/bblocks/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://maytetoscano.github.io/bblocks-ubcp-standards/> a skos:ConceptScheme,
+        dcat:Catalog,
+        bblocks:BBlocksRegister ;
+    rdfs:label "Building Blocks - ubcp-bblocks-standards-v2" ;
+    dct:modified "2026-02-17T15:38:20.354999"^^xsd:dateTime ;
+    owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
+    skos:prefLabel "Building Blocks - ubcp-bblocks-standards-v2" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://maytetoscano.github.io/bblocks-ubcp-standards/build/bblocks.ttl> ],
+        [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://maytetoscano.github.io/bblocks-ubcp-standards/build/register.json> ],
+        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://maytetoscano.github.io/bblocks-ubcp-standards/build/bblocks.jsonld> ] ;
+    foaf:homepage <https://maytetoscano.github.io/bblocks-ubcp-standards/> ;
+    bblocks:hasValidationReport <https://maytetoscano.github.io/bblocks-ubcp-standards/build/tests/report.html> .
+
+<https://maytetoscano.github.io/bblocks-ubcp-standards/build/bblocks.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    prov:wasAttributedTo _:N17a778cb18c04e169727160334b6373d ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:endedAtTime "2026-02-17T15:38:20.602268"^^xsd:dateTime ;
+            prov:startedAtTime "2026-02-17T15:38:20.425453"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:7dce194958ef9e3b79140d269a059dfb3f3e428c" ;
+                    rdfs:seeAlso <https://maytetoscano.github.io/bblocks-ubcp-standards/build/register.json> ] ;
+            prov:wasAssociatedWith _:N17a778cb18c04e169727160334b6373d ] .
+
+_:N17a778cb18c04e169727160334b6373d a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dct:hasVersion "0.5.17" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+
