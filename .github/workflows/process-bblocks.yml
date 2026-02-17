@@ -1,9 +1,10 @@
 name: Validate and process Building Blocks
-
 on:
   workflow_dispatch:
   push:
-    branches: [ "main", "master" ]
+    branches:
+      - master
+      - main
 
 permissions:
   contents: write
@@ -13,8 +14,3 @@ permissions:
 jobs:
   validate-and-process:
     uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@master
-    with:
-      # URL base donde se servirá el registro (GitHub Pages)
-      base_url: https://maytetoscano.github.io/bblocks-ubcp-standards/
-      # Si tu catálogo está en docs/ (lo normal), deja esto:
-      publish_dir: docs
