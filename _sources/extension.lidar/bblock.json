@@ -1,0 +1,20 @@
+{
+  "$schema": "metaschema.yaml",
+  "itemIdentifier": "ogc.ubcp.extension.lidar",
+  "name": "UBCP LiDAR Extension",
+  "abstract": "Point cloud acquisition parameters (scan pattern, density, intensity calibration).",
+  "itemClass": "schema",
+  "status": "under-development",
+  "version": "0.1.0",
+  "dateTimeAddition": "2026-02-18T07:48:00Z",
+  "dateOfLastChange": "2026-02-18",
+  "tags": ["ubcp", "uav"],
+  "group": "uav",
+  "conformanceClasses": [
+    "https://MayteToscano.github.io/bblocks-ubcp-standards/conformance/ogc.ubcp.extension.lidar"
+  ],
+  "dependsOn": [
+  "ogc.ubcp.core",
+  "ogc.ubcp.std.iso19157"
+]
+}

@@ -1,3 +1,5 @@
-name: ubcp-bblocks-standards-v2
+name: bblocks-ubcp-standards
+base-url: "https://MayteToscano.github.io/bblocks-ubcp-standards/"
 identifier-prefix: ogc.ubcp.
-base-url: https://maytetoscano.github.io/ubcp-bblocks-standards-v2/
+imports:
+  - "https://opengeospatial.github.io/bblocks/register.json"

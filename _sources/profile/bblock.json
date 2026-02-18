@@ -1,0 +1,24 @@
+{
+  "$schema": "metaschema.yaml",
+  "itemIdentifier": "ogc.ubcp.profile",
+  "name": "UBCP Profile (Aggregator)",
+  "abstract": "Entry-point building block grouping UBCP core + extensions and linking the profile as a whole.",
+  "itemClass": "schema",
+  "status": "under-development",
+  "version": "0.1.0",
+  "dateTimeAddition": "2026-02-18T07:48:00Z",
+  "dateOfLastChange": "2026-02-18",
+  "tags": ["ubcp", "uav", "profile"],
+  "group": "uav",
+  "superBBlock": true,
+  "conformanceClasses": [
+    "https://MayteToscano.github.io/bblocks-ubcp-standards/conformance/ogc.ubcp.profile"
+  ],
+  "dependsOn": [
+    "ogc.ubcp.core",
+    "ogc.ubcp.extension.thermal",
+    "ogc.ubcp.extension.multispectral",
+    "ogc.ubcp.extension.lidar",
+    "ogc.ubcp.extension.rtk"
+  ]
+}

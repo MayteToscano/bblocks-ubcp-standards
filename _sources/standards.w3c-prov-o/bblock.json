@@ -1,0 +1,17 @@
+{
+  "$schema": "metaschema.yaml",
+  "itemIdentifier": "ogc.ubcp.std.w3c_prov",
+  "name": "W3C PROV-O",
+  "abstract": "Provenance model for processing lineage.",
+  "itemClass": "schema",
+  "status": "under-development",
+  "version": "0.1.0",
+  "dateTimeAddition": "2026-02-18T07:48:00Z",
+  "dateOfLastChange": "2026-02-18",
+  "tags": ["ubcp", "standards"],
+  "group": "standards",
+  "conformanceClasses": [
+    "https://MayteToscano.github.io/bblocks-ubcp-standards/conformance/ogc.ubcp.std.w3c_prov"
+  ],
+  "dependsOn": []
+}

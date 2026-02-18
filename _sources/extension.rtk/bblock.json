@@ -1,0 +1,20 @@
+{
+  "$schema": "metaschema.yaml",
+  "itemIdentifier": "ogc.ubcp.extension.rtk",
+  "name": "UBCP RTK Extension",
+  "abstract": "RTK/GNSS positioning mode and precision reporting.",
+  "itemClass": "schema",
+  "status": "under-development",
+  "version": "0.1.0",
+  "dateTimeAddition": "2026-02-18T07:48:00Z",
+  "dateOfLastChange": "2026-02-18",
+  "tags": ["ubcp", "uav"],
+  "group": "uav",
+  "conformanceClasses": [
+    "https://MayteToscano.github.io/bblocks-ubcp-standards/conformance/ogc.ubcp.extension.rtk"
+  ],
+  "dependsOn": [
+  "ogc.ubcp.core",
+  "ogc.ubcp.std.iso19157"
+]
+}

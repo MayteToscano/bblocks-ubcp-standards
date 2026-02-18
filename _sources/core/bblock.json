@@ -1,0 +1,25 @@
+{
+  "$schema": "metaschema.yaml",
+  "itemIdentifier": "ogc.ubcp.core",
+  "name": "UBCP Core UAV Module (Mandatory Base)",
+  "abstract": "Minimum interoperable UAV capture metadata: temporal/spatial reference, orientation, sensor ID, CRS declaration and lineage.",
+  "itemClass": "schema",
+  "status": "under-development",
+  "version": "0.1.0",
+  "dateTimeAddition": "2026-02-18T07:48:00Z",
+  "dateOfLastChange": "2026-02-18",
+  "tags": ["ubcp", "uav"],
+  "group": "uav",
+  "conformanceClasses": [
+    "https://MayteToscano.github.io/bblocks-ubcp-standards/conformance/ogc.ubcp.core"
+  ],
+  "dependsOn": [
+  "ogc.ubcp.std.iso19115",
+  "ogc.ubcp.std.iso19111",
+  "ogc.ubcp.std.iso19115_2",
+  "ogc.ubcp.std.ogc_geopose",
+  "ogc.ubcp.std.ogc_sensorml",
+  "ogc.ubcp.std.w3c_prov",
+  "ogc.ubcp.std.stac_core"
+]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "metaschema.yaml",
+  "itemIdentifier": "ogc.ubcp.extension.thermal",
+  "name": "UBCP Thermal Extension",
+  "abstract": "Thermal capture parameters (calibration, radiometric model).",
+  "itemClass": "schema",
+  "status": "under-development",
+  "version": "0.1.0",
+  "dateTimeAddition": "2026-02-18T07:48:00Z",
+  "dateOfLastChange": "2026-02-18",
+  "tags": ["ubcp", "uav"],
+  "group": "uav",
+  "conformanceClasses": [
+    "https://MayteToscano.github.io/bblocks-ubcp-standards/conformance/ogc.ubcp.extension.thermal"
+  ],
+  "dependsOn": [
+  "ogc.ubcp.core"
+]
+}
