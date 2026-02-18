@@ -1,5 +1,5 @@
 {
-  "$schema": "metaschema.yaml",
+  "$schema": "https://opengeospatial.github.io/bblocks/metaschema.yaml",
   "itemIdentifier": "ogc.ubcp.extension.thermal",
   "name": "UBCP Thermal Extension",
   "abstract": "Thermal capture parameters (calibration, radiometric model).",

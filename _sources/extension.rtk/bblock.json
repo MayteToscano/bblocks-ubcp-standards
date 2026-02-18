@@ -1,5 +1,5 @@
 {
-  "$schema": "metaschema.yaml",
+  "$schema": "https://opengeospatial.github.io/bblocks/metaschema.yaml",
   "itemIdentifier": "ogc.ubcp.extension.rtk",
   "name": "UBCP RTK Extension",
   "abstract": "RTK/GNSS positioning mode and precision reporting.",

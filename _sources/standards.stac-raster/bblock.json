@@ -1,5 +1,5 @@
 {
-  "$schema": "metaschema.yaml",
+  "$schema": "https://opengeospatial.github.io/bblocks/metaschema.yaml",
   "itemIdentifier": "ogc.ubcp.std.stac_raster",
   "name": "STAC Raster",
   "abstract": "STAC Raster extension for raster band metadata.",

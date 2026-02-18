@@ -1,5 +1,5 @@
 {
-  "$schema": "metaschema.yaml",
+  "$schema": "https://opengeospatial.github.io/bblocks/metaschema.yaml",
   "itemIdentifier": "ogc.ubcp.core",
   "name": "UBCP Core UAV Module (Mandatory Base)",
   "abstract": "Minimum interoperable UAV capture metadata: temporal/spatial reference, orientation, sensor ID, CRS declaration and lineage.",

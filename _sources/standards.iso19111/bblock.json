@@ -1,5 +1,5 @@
 {
-  "$schema": "metaschema.yaml",
+  "$schema": "https://opengeospatial.github.io/bblocks/metaschema.yaml",
   "itemIdentifier": "ogc.ubcp.std.iso19111",
   "name": "ISO 19111 CRS",
   "abstract": "Coordinate Reference Systems and referencing by coordinates (CRS URIs).",

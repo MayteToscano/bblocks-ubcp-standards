@@ -1,5 +1,5 @@
 {
-  "$schema": "metaschema.yaml",
+  "$schema": "https://opengeospatial.github.io/bblocks/metaschema.yaml",
   "itemIdentifier": "ogc.ubcp.std.iso19115",
   "name": "ISO 19115 Metadata",
   "abstract": "Core geospatial metadata elements used across the profile.",

@@ -1,5 +1,5 @@
 {
-  "$schema": "metaschema.yaml",
+  "$schema": "https://opengeospatial.github.io/bblocks/metaschema.yaml",
   "itemIdentifier": "ogc.ubcp.extension.lidar",
   "name": "UBCP LiDAR Extension",
   "abstract": "Point cloud acquisition parameters (scan pattern, density, intensity calibration).",

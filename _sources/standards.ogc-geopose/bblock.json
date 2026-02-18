@@ -1,5 +1,5 @@
 {
-  "$schema": "metaschema.yaml",
+  "$schema": "https://opengeospatial.github.io/bblocks/metaschema.yaml",
   "itemIdentifier": "ogc.ubcp.std.ogc_geopose",
   "name": "OGC GeoPose",
   "abstract": "Pose/orientation representation for sensors/platform/camera frames.",

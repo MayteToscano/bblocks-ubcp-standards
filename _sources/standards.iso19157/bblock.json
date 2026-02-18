@@ -1,5 +1,5 @@
 {
-  "$schema": "metaschema.yaml",
+  "$schema": "https://opengeospatial.github.io/bblocks/metaschema.yaml",
   "itemIdentifier": "ogc.ubcp.std.iso19157",
   "name": "ISO 19157 Data Quality",
   "abstract": "Data quality and accuracy elements used for precision reporting.",

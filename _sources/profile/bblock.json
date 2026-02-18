@@ -1,5 +1,5 @@
 {
-  "$schema": "metaschema.yaml",
+  "$schema": "https://opengeospatial.github.io/bblocks/metaschema.yaml",
   "itemIdentifier": "ogc.ubcp.profile",
   "name": "UBCP Profile (Aggregator)",
   "abstract": "Entry-point building block grouping UBCP core + extensions and linking the profile as a whole.",

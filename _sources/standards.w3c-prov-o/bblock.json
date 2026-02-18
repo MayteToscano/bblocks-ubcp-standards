@@ -1,5 +1,5 @@
 {
-  "$schema": "metaschema.yaml",
+  "$schema": "https://opengeospatial.github.io/bblocks/metaschema.yaml",
   "itemIdentifier": "ogc.ubcp.std.w3c_prov",
   "name": "W3C PROV-O",
   "abstract": "Provenance model for processing lineage.",
